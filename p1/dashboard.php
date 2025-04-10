@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASHBOARD - Online Voting System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,8 +13,8 @@
             <button type="submit">Logout</button>
         </form>
         <h1>Online Voting System</h1>
-        <hr>
     </header>
+    <hr>
     <main>
         <div id="profile"></div>
         <div id="groups"></div>

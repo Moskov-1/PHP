@@ -6,8 +6,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <header>
         <h1>Online Voting System</h1>
-        <hr>
+    </header>    
+    <hr>
+    <main>
         <form action="" method="POST">
             <h2>LOGIN</h2>
             <input type="phone" name="mobile" placeholder="Enter Mobile"> <br>
@@ -20,5 +23,6 @@
             <button type="submit">LOGIN</button>
         </form>
         Not a user? <a style="color:red" href="register.php">Resister Here</a> 
+    </main>    
     </body>   
 </html>

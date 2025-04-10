@@ -8,10 +8,10 @@
     <body>
         <header>
             <h1>Online Voting System</h1>
-            <hr>
         </header>
+        <hr>
         <main>
-            <form action="" method="POST">
+            <form action="post_register.php" method="POST">
             <h2>REGISTRATION</h2>
                 <input type="text" name="name" placeholder="Name">
                 <input type="phone" name="mobile" placeholder="Mobile">
@@ -20,7 +20,8 @@
                 <input type="password" name="confirm_password" placeholder="Confirm Password">
                 <br>
                 <input type="text" name="address" placeholder="Address"> <br>
-                <input type="file" name="photo" ><br>
+                <label for="photo">Upload Photo</label>
+                <input id="file" type="file" name="photo" ><br>
                 <select name="role">
                     <option value="1">Voter</option>
                     <option value="2">Kontol</option>
