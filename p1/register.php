@@ -11,7 +11,7 @@
         </header>
         <hr>
         <main>
-            <form action="post_register.php" method="POST">
+            <form action="post_register.php" method="POST" enctype="multipart/form-data">
             <h2>REGISTRATION</h2>
                 <input type="text" name="name" placeholder="Name">
                 <input type="phone" name="mobile" placeholder="Mobile">
