@@ -10,8 +10,8 @@
         <h1>Online Voting System</h1>
     </header>    
     <hr>
-    <main>
-        <form action="" method="POST">
+    <main>  
+        <form action="post_login.php" method="POST">
             <h2>LOGIN</h2>
             <input type="phone" name="mobile" placeholder="Enter Mobile"> <br>
             <input type="password" name="password" placeholder="Enter Password"> <br>
