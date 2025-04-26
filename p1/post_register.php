@@ -1,5 +1,5 @@
 <?php 
-    include_once("connect.php");
+    include_once("includes/connect.php");
 
     $name = $_POST["name"] ?? '';
     $mobile = $_POST["mobile"]?? '';
@@ -23,7 +23,7 @@
         move_uploaded_file($tmp_name, "uploads/$photo");
         $img = "uploads/$photo";
         
-        $insert = mysqli_query($conn,"INSERT INTO users (name, mobile,   password,     role,  address,  photo, status, votes)   VAlUES('$name', '$mobile', '$password', '$role', '$address', '$img', '1', '0')")
+        $insert = mysqli_query($conn,"INSERT INTO users (name, mobile, password, role, address, photo, status, votes) VAlUES('$name', '$mobile', '$password', '$role', '$address', '$img', '1', '0')")
          or die(mysqli_error($conn));
 
         if($insert){
