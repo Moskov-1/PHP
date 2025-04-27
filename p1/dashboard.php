@@ -5,6 +5,7 @@
         header('location: index.php');
     }
     $user = $_SESSION['user'];
+    $grpdata = $_SESSION['gourps'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,7 +68,15 @@
                 </div>
             </div>
             <div class="shrink-0 card" id="groups">
-    
+                <?php 
+                    if(isset($grpdata)){
+                        foreach ($variable as $key => $value) {
+                            # code...
+                        }
+                    }else{
+                        echo "<h2>No data available</h2>";
+                    }
+                ?>
             </div>
         </div>
     </main>
